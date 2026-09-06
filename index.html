@@ -54,7 +54,32 @@ body {
 /* =========================================
    CONTAINER
 ========================================= */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
 
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+
+    border: 4px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 12px 35px rgba(99, 102, 241, 0.35);
+}
+
+.profile-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+}
 .profile-container {
     position: relative;
     min-height: 100vh;
