@@ -2,867 +2,2519 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#0f172a">
-    <meta name="description" content="Connect with Mohammed Rubel on social media.">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
 
-    <title>Mohammed Rubel | Connect With Me</title>
+    <meta name="theme-color" content="#06151d">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description"
+          content="Mohammed Rubel — Visual Storyteller, Photographer and Content Creator. Explore photography, film, travel stories and creative work.">
 
-    <!-- CSS -->
-    <style>
-	/* =========================================
-   GLOBAL
-========================================= */
+    <meta name="author" content="Mohammed Rubel">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Mohammed Rubel | Visual Storyteller</title>
 
-:root {
-    --bg: #020617;
-    --card: rgba(15, 23, 42, 0.78);
-    --border: rgba(255, 255, 255, 0.09);
-    --text: #ffffff;
-    --muted: #94a3b8;
-    --primary: #6366f1;
-}
 
-html {
-    scroll-behavior: smooth;
-}
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
-body {
-    font-family: "Inter", sans-serif;
-    min-height: 100vh;
-    background:
-        radial-gradient(circle at top left, rgba(99, 102, 241, 0.18), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.14), transparent 35%),
-        var(--bg);
-    color: var(--text);
-    overflow-x: hidden;
-}
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-/* =========================================
-   CONTAINER
-========================================= */
-.profile-image {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-    border-radius: 50%;
 
-    background: linear-gradient(135deg, #6366f1, #ec4899);
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
 
-    border: 4px solid rgba(255, 255, 255, 0.12);
-
-    box-shadow:
-        0 12px 35px rgba(99, 102, 241, 0.35);
-}
-
-.profile-image img {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 50%;
-}
-.profile-container {
-    position: relative;
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 30px 16px;
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   BACKGROUND ORBS
-========================================= */
-
-.gradient-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    pointer-events: none;
-    opacity: 0.45;
-}
-
-.orb-one {
-    width: 280px;
-    height: 280px;
-    background: #4f46e5;
-    top: -120px;
-    left: -100px;
-}
-
-.orb-two {
-    width: 300px;
-    height: 300px;
-    background: #db2777;
-    bottom: -140px;
-    right: -100px;
-}
-
-
-/* =========================================
-   PROFILE CARD
-========================================= */
-
-.profile-card {
-    position: relative;
-    z-index: 2;
-
-    width: 100%;
-    max-width: 520px;
-
-    padding: 34px 24px 22px;
-
-    background: var(--card);
-
-    border: 1px solid var(--border);
-
-    border-radius: 30px;
-
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-
-    box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.45);
-
-    animation: cardAppear 0.8s ease;
-}
-
-@keyframes cardAppear {
-
-    from {
-        opacity: 0;
-        transform: translateY(25px) scale(0.97);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-
-/* =========================================
-   PROFILE HEADER
-========================================= */
-
-.profile-header {
-    text-align: center;
-}
-
-.profile-image-wrapper {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 18px;
-}
-
-.profile-image {
-    width: 100px;
-    height: 100px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 38px;
-
-    background:
-        linear-gradient(135deg, #6366f1, #ec4899);
-
-    border: 4px solid rgba(255,255,255,0.12);
-
-    box-shadow:
-        0 12px 35px rgba(99,102,241,0.35);
-}
-
-.online-dot {
-    position: absolute;
-
-    width: 19px;
-    height: 19px;
-
-    background: #22c55e;
-
-    border: 4px solid #0f172a;
-
-    border-radius: 50%;
-
-    right: 3px;
-    bottom: 5px;
-}
-
-.profile-header h1 {
-    font-size: 27px;
-    font-weight: 800;
-
-    letter-spacing: -0.8px;
-
-    margin-bottom: 5px;
-}
-
-.username {
-    color: #a5b4fc;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-.bio {
-    font-size: 14px;
-    font-weight: 600;
-    color: #e2e8f0;
-
-    margin-bottom: 8px;
-}
-
-.intro {
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.6;
-
-    max-width: 360px;
-    margin: auto;
-}
-
-
-/* =========================================
-   SOCIAL LINKS
-========================================= */
-
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    margin-top: 28px;
-}
-
-.social-item {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    min-height: 72px;
-
-    padding: 12px 14px;
-
-    color: white;
-    text-decoration: none;
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 18px;
-
-    background: rgba(255,255,255,0.045);
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.social-item:hover {
-    transform: translateY(-3px) scale(1.01);
-
-    background: rgba(255,255,255,0.09);
-
-    border-color: rgba(255,255,255,0.16);
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,0.2);
-}
-
-.social-item:active {
-    transform: scale(0.98);
-}
-
-
-/* =========================================
-   SOCIAL ICON
-========================================= */
-
-.social-icon {
-    width: 46px;
-    height: 46px;
-
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    font-size: 20px;
-}
-
-.facebook .social-icon {
-    background: rgba(24,119,242,0.18);
-    color: #60a5fa;
-}
-
-.youtube .social-icon {
-    background: rgba(255,0,0,0.15);
-    color: #ff4d4d;
-}
-
-.photography .social-icon {
-    background: rgba(168,85,247,0.16);
-    color: #c084fc;
-}
-
-.tiktok .social-icon {
-    background: rgba(255,255,255,0.09);
-    color: #ffffff;
-}
-
-
-/* =========================================
-   SOCIAL CONTENT
-========================================= */
-
-.social-content {
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 14px;
-
-    min-width: 0;
-}
-
-.social-content strong {
-    font-size: 14px;
-    font-weight: 700;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.social-content small {
-    margin-top: 4px;
-
-    color: #94a3b8;
-
-    font-size: 11px;
-}
-
-
-/* =========================================
-   ARROW
-========================================= */
-
-.arrow {
-    margin-left: 10px;
-
-    color: #64748b;
-
-    font-size: 13px;
-
-    transition: 0.25s ease;
-}
-
-.social-item:hover .arrow {
-    color: white;
-    transform: translate(2px, -2px);
-}
-
-
-/* =========================================
-   ACTION BUTTONS
-========================================= */
-
-.actions {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 10px;
-
-    margin-top: 20px;
-}
-
-.action-button {
-    border: 0;
-
-    border-radius: 14px;
-
-    padding: 13px 10px;
-
-    cursor: pointer;
-
-    color: white;
-
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 600;
-
-    background:
-        linear-gradient(135deg, #6366f1, #8b5cf6);
-
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease;
-}
-
-.action-button:hover {
-    transform: translateY(-2px);
-}
-
-.action-button:active {
-    transform: scale(0.97);
-}
-
-.action-button i {
-    margin-right: 5px;
-}
-
-.action-button.secondary {
-    background: rgba(255,255,255,0.07);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    color: #cbd5e1;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    text-align: center;
-
-    margin-top: 22px;
-
-    padding-top: 17px;
-
-    border-top: 1px solid rgba(255,255,255,0.06);
-
-    color: #64748b;
-
-    font-size: 10px;
-
-    letter-spacing: 1px;
-
-    text-transform: uppercase;
-}
-
-
-/* =========================================
-   TOAST
-========================================= */
-
-.toast {
-    position: fixed;
-
-    left: 50%;
-    bottom: 25px;
-
-    transform: translate(-50%, 20px);
-
-    padding: 12px 18px;
-
-    background: #1e293b;
-
-    border: 1px solid rgba(255,255,255,0.1);
-
-    border-radius: 12px;
-
-    color: white;
-
-    font-size: 12px;
-
-    opacity: 0;
-
-    pointer-events: none;
-
-    transition: 0.3s ease;
-
-    z-index: 100;
-}
-
-.toast.show {
-    opacity: 1;
-    transform: translate(-50%, 0);
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 480px) {
-
-    .profile-container {
-        padding: 15px;
-    }
-
-    .profile-card {
-        padding: 30px 17px 20px;
-
-        border-radius: 25px;
-    }
-
-    .profile-header h1 {
-        font-size: 25px;
-    }
-
-    .social-item {
-        min-height: 68px;
-    }
-
-    .social-icon {
-        width: 43px;
-        height: 43px;
-    }
-
-    .actions {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* =========================================
-   REDUCED MOTION
-========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-</style>
-
-    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ====================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: "Inter", sans-serif;
+
+            background: #06151d;
+
+            color: #ffffff;
+
+            overflow-x: hidden;
+
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           MAIN PAGE
+        ====================================================== */
+
+        .page {
+            position: relative;
+
+            width: 100%;
+            min-height: 100vh;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(2, 19, 26, 0.18),
+                    rgba(2, 19, 26, 0.95) 82%,
+                    #06151d 100%
+                );
+        }
+
+
+        /* =====================================================
+           MAIN BACKGROUND
+        ====================================================== */
+
+        .page-background {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: -5;
+
+            background-image:
+                linear-gradient(
+                    180deg,
+                    rgba(2, 15, 22, 0.12) 0%,
+                    rgba(3, 22, 29, 0.45) 42%,
+                    rgba(3, 20, 27, 0.96) 90%
+                ),
+                url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85");
+
+            background-size: cover;
+
+            background-position: center;
+
+            filter: saturate(0.85);
+        }
+
+
+        .page-background::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(2, 17, 24, 0.72),
+                    transparent 45%,
+                    rgba(2, 17, 24, 0.40)
+                );
+        }
+
+
+        /* =====================================================
+           DARK OVERLAY
+        ====================================================== */
+
+        .dark-overlay {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: -4;
+
+            pointer-events: none;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(1, 14, 20, 0.10) 0%,
+                    rgba(1, 16, 22, 0.25) 30%,
+                    rgba(2, 18, 24, 0.78) 72%,
+                    #06151d 100%
+                );
+        }
+
+
+        /* =====================================================
+           CONTAINER
+        ====================================================== */
+
+        .container {
+            width: 100%;
+
+            max-width: 1024px;
+
+            margin: auto;
+
+            padding: 0 50px;
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .hero {
+            position: relative;
+
+            min-height: 480px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: flex-start;
+
+            text-align: center;
+
+            padding-top: 38px;
+
+            overflow: hidden;
+        }
+
+
+        /*
+        Decorative top landscape.
+        */
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 260px;
+
+            z-index: -1;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(1, 13, 19, 0) 0%,
+                    rgba(2, 18, 24, 0.05) 50%,
+                    rgba(3, 19, 25, 0.96) 100%
+                );
+        }
+
+
+        /* =====================================================
+           PROFILE IMAGE
+        ====================================================== */
+
+        .profile-wrapper {
+            position: relative;
+
+            width: 190px;
+
+            height: 190px;
+
+            margin-bottom: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .profile-ring {
+            position: absolute;
+
+            inset: 0;
+
+            border-radius: 50%;
+
+            border: 5px solid rgba(255,255,255,0.92);
+
+            box-shadow:
+                0 0 0 2px rgba(255,255,255,0.12),
+                0 10px 35px rgba(0,0,0,0.40);
+        }
+
+
+        .profile-photo {
+            width: 178px;
+
+            height: 178px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            border: 2px solid rgba(255,255,255,0.25);
+        }
+
+
+        /* =====================================================
+           NAME
+        ====================================================== */
+
+        .name {
+            display: flex;
+
+            align-items: baseline;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+
+            line-height: 0.9;
+
+            margin-top: 2px;
+        }
+
+
+        .name-first {
+            font-family: "Caveat", cursive;
+
+            font-size: clamp(58px, 8vw, 92px);
+
+            font-weight: 600;
+
+            color: #ffffff;
+
+            letter-spacing: -2px;
+
+            text-shadow:
+                0 5px 20px rgba(0,0,0,0.35);
+        }
+
+
+        .name-last {
+            font-family: "Caveat", cursive;
+
+            font-size: clamp(62px, 8.5vw, 98px);
+
+            font-weight: 600;
+
+            color: #f5b91c;
+
+            letter-spacing: -2px;
+
+            text-shadow:
+                0 5px 20px rgba(0,0,0,0.35);
+        }
+
+
+        /* =====================================================
+           USERNAME
+        ====================================================== */
+
+        .username {
+            margin-top: 10px;
+
+            font-size: 19px;
+
+            font-weight: 400;
+
+            color: #ffffff;
+
+            letter-spacing: 0.2px;
+
+            text-shadow:
+                0 2px 8px rgba(0,0,0,0.6);
+        }
+
+
+        /* =====================================================
+           PROFESSION
+        ====================================================== */
+
+        .profession {
+            margin-top: 23px;
+
+            font-size: 21px;
+
+            font-weight: 500;
+
+            letter-spacing: 1px;
+
+            color: #ffffff;
+
+            text-shadow:
+                0 2px 10px rgba(0,0,0,0.65);
+        }
+
+
+        .profession span {
+            color: #f5b91c;
+
+            margin: 0 12px;
+        }
+
+
+        /* =====================================================
+           INTRO
+        ====================================================== */
+
+        .intro {
+            margin-top: 26px;
+
+            max-width: 720px;
+
+            font-size: 18px;
+
+            line-height: 1.65;
+
+            color: rgba(255,255,255,0.88);
+
+            text-shadow:
+                0 2px 10px rgba(0,0,0,0.65);
+        }
+
+
+        .intro strong {
+            display: block;
+
+            font-size: 21px;
+
+            letter-spacing: 4px;
+
+            font-weight: 500;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================================
+           SECTION TITLE
+        ====================================================== */
+
+        .section-heading {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 24px;
+
+            margin: 18px 0 22px;
+        }
+
+
+        .section-heading::before,
+        .section-heading::after {
+            content: "";
+
+            width: 170px;
+
+            max-width: 25vw;
+
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #f5b91c
+                );
+        }
+
+
+        .section-heading::after {
+            background:
+                linear-gradient(
+                    90deg,
+                    #f5b91c,
+                    transparent
+                );
+        }
+
+
+        .section-heading h2 {
+            font-size: 28px;
+
+            font-weight: 500;
+
+            letter-spacing: 7px;
+
+            color: #f5b91c;
+        }
+
+
+        .section-subtitle {
+            text-align: center;
+
+            color: rgba(255,255,255,0.8);
+
+            font-size: 13px;
+
+            letter-spacing: 6px;
+
+            margin-top: -11px;
+
+            margin-bottom: 27px;
+        }
+
+
+        /* =====================================================
+           MY WORK
+        ====================================================== */
+
+        .work-section {
+            padding-top: 4px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .work-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+        }
+
+
+        /* =====================================================
+           WORK CARD
+        ====================================================== */
+
+        .work-card {
+            position: relative;
+
+            min-height: 300px;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            border: 1px solid rgba(255,255,255,0.45);
+
+            background: #0b1519;
+
+            box-shadow:
+                0 18px 45px rgba(0,0,0,0.35);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
+        }
+
+
+        .work-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 25px 55px rgba(0,0,0,0.48);
+        }
+
+
+        .work-card::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent 30%,
+                    rgba(0,0,0,0.90) 100%
+                );
+
+            z-index: 1;
+        }
+
+
+        .work-image {
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.6s ease;
+        }
+
+
+        .work-card:hover .work-image {
+            transform: scale(1.07);
+        }
+
+
+        /* =====================================================
+           WORK CONTENT
+        ====================================================== */
+
+        .work-content {
+            position: absolute;
+
+            z-index: 3;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            padding: 22px 24px 24px;
+        }
+
+
+        .work-label {
+            display: inline-block;
+
+            padding: 9px 24px;
+
+            margin-bottom: 15px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            color: #06151d;
+
+            background: #f5b91c;
+
+            clip-path:
+                polygon(
+                    4% 0,
+                    100% 0,
+                    96% 100%,
+                    0 100%
+                );
+        }
+
+
+        .work-card:nth-child(2) .work-label {
+            background: #0dd8ef;
+        }
+
+
+        .work-content h3 {
+            font-size: 26px;
+
+            font-weight: 700;
+
+            margin-bottom: 9px;
+
+            color: #ffffff;
+        }
+
+
+        .work-content p {
+            font-size: 14px;
+
+            line-height: 1.65;
+
+            color: rgba(255,255,255,0.88);
+        }
+
+
+        .work-meta {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 8px;
+        }
+
+
+        .work-meta span {
+            font-size: 12px;
+
+            color: rgba(255,255,255,0.82);
+        }
+
+
+        .work-meta span:not(:last-child)::after {
+            content: "•";
+
+            margin-left: 10px;
+
+            color: #f5b91c;
+        }
+
+
+        /* =====================================================
+           CONNECT SECTION
+        ====================================================== */
+
+        .connect-section {
+            padding-top: 35px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .connect-heading {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .connect-heading::before,
+        .connect-heading::after {
+            content: "";
+
+            height: 1px;
+
+            width: 180px;
+
+            max-width: 24vw;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255,255,255,0.75)
+                );
+        }
+
+
+        .connect-heading::after {
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.75),
+                    transparent
+                );
+        }
+
+
+        .connect-heading h2 {
+            font-size: 20px;
+
+            font-weight: 500;
+
+            letter-spacing: 7px;
+
+            white-space: nowrap;
+        }
+
+
+        /* =====================================================
+           SOCIAL ITEM
+        ====================================================== */
+
+        .social-list {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 12px;
+        }
+
+
+        .social-item {
+            position: relative;
+
+            min-height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            border-radius: 17px;
+
+            border: 1px solid rgba(255,255,255,0.55);
+
+            background: rgba(4,18,24,0.82);
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.28);
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .social-item:hover {
+            transform: translateY(-3px);
+
+            border-color: rgba(255,255,255,0.9);
+
+            box-shadow:
+                0 18px 40px rgba(0,0,0,0.38);
+        }
+
+
+        /* =====================================================
+           SOCIAL BACKGROUND
+        ====================================================== */
+
+        .social-bg {
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            opacity: 0.48;
+
+            z-index: 0;
+        }
+
+
+        .social-item::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            z-index: 1;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(4,14,19,0.97) 0%,
+                    rgba(4,14,19,0.83) 30%,
+                    rgba(4,14,19,0.48) 70%,
+                    rgba(4,14,19,0.68) 100%
+                );
+        }
+
+
+        /* =====================================================
+           SOCIAL ICON
+        ====================================================== */
+
+        .social-icon {
+            position: relative;
+
+            z-index: 3;
+
+            flex-shrink: 0;
+
+            width: 54px;
+
+            height: 54px;
+
+            margin-left: 14px;
+
+            border-radius: 13px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 28px;
+
+            color: #ffffff;
+
+            background: #1877f2;
+
+            box-shadow:
+                0 5px 18px rgba(0,0,0,0.35);
+        }
+
+
+        .youtube .social-icon {
+            background: #ff0000;
+        }
+
+
+        .bornomala .social-icon {
+            background:
+                linear-gradient(
+                    135deg,
+                    #6d28d9,
+                    #9333ea
+                );
+        }
+
+
+        .tiktok .social-icon {
+            background: #030303;
+
+            border: 1px solid #ff0050;
+
+            box-shadow:
+                0 0 10px rgba(37,244,238,0.25);
+        }
+
+
+        /* =====================================================
+           SOCIAL CONTENT
+        ====================================================== */
+
+        .social-content {
+            position: relative;
+
+            z-index: 3;
+
+            flex: 1;
+
+            min-width: 0;
+
+            margin-left: 17px;
+
+            padding: 8px 0;
+        }
+
+
+        .social-content h3 {
+            font-size: 18px;
+
+            font-weight: 700;
+
+            line-height: 1.25;
+
+            color: #ffffff;
+        }
+
+
+        .social-content p {
+            margin-top: 4px;
+
+            font-size: 12px;
+
+            line-height: 1.4;
+
+            color: rgba(255,255,255,0.82);
+        }
+
+
+        /* =====================================================
+           SOCIAL ARROW
+        ====================================================== */
+
+        .social-arrow {
+            position: relative;
+
+            z-index: 3;
+
+            flex-shrink: 0;
+
+            margin-right: 20px;
+
+            font-size: 22px;
+
+            color: #ffffff;
+
+            transition:
+                transform 0.3s ease;
+        }
+
+
+        .social-item:hover .social-arrow {
+            transform: translateX(6px);
+        }
+
+
+        /* =====================================================
+           FOOTER / BOTTOM VISUAL
+        ====================================================== */
+
+        .footer-visual {
+            position: relative;
+
+            margin-top: 42px;
+
+            min-height: 190px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: flex-end;
+
+            padding-bottom: 22px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(2,18,24,0) 0%,
+                    rgba(2,18,24,0.1) 20%,
+                    rgba(2,18,24,0.88) 100%
+                );
+        }
+
+
+        .footer-landscape {
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center bottom;
+
+            z-index: -2;
+
+            opacity: 0.82;
+        }
+
+
+        .footer-visual::after {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            z-index: -1;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(4,20,27,0) 0%,
+                    rgba(4,20,27,0.78) 72%,
+                    rgba(4,20,27,1) 100%
+                );
+        }
+
+
+        /* =====================================================
+           FOOTER SLOGAN
+        ====================================================== */
+
+        .slogan {
+            font-family: "Caveat", cursive;
+
+            font-size: 34px;
+
+            font-weight: 500;
+
+            color: #ffffff;
+
+            letter-spacing: 2px;
+
+            text-shadow:
+                0 3px 10px rgba(0,0,0,0.7);
+        }
+
+
+        .slogan span {
+            color: #f5b91c;
+
+            padding: 0 8px;
+        }
+
+
+        .slogan-line {
+            width: 220px;
+
+            height: 2px;
+
+            margin-top: -2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #f5b91c,
+                    transparent
+                );
+        }
+
+
+        /* =====================================================
+           FOOTER SOCIAL ICONS
+        ====================================================== */
+
+        .footer-socials {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 22px;
+
+            margin-top: 18px;
+        }
+
+
+        .footer-socials a {
+            width: 28px;
+
+            height: 28px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: rgba(255,255,255,0.85);
+
+            font-size: 17px;
+
+            transition:
+                color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+
+        .footer-socials a:hover {
+            color: #f5b91c;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           SHARE / COPY
+        ====================================================== */
+
+        .utility-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            margin-top: 18px;
+        }
+
+
+        .utility-button {
+            border: 1px solid rgba(255,255,255,0.18);
+
+            background: rgba(255,255,255,0.06);
+
+            color: rgba(255,255,255,0.8);
+
+            padding: 8px 14px;
+
+            border-radius: 20px;
+
+            font-size: 11px;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+
+        .utility-button:hover {
+            background: rgba(255,255,255,0.12);
+
+            color: #ffffff;
+
+            border-color: rgba(255,255,255,0.35);
+        }
+
+
+        /* =====================================================
+           COPYRIGHT
+        ====================================================== */
+
+        .copyright {
+            text-align: center;
+
+            padding: 18px 0 28px;
+
+            font-size: 10px;
+
+            color: rgba(255,255,255,0.42);
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           TOAST
+        ====================================================== */
+
+        .toast {
+            position: fixed;
+
+            left: 50%;
+
+            bottom: 25px;
+
+            z-index: 100;
+
+            transform:
+                translate(-50%, 30px);
+
+            padding: 11px 18px;
+
+            border-radius: 30px;
+
+            background: rgba(10,25,32,0.96);
+
+            border: 1px solid rgba(255,255,255,0.16);
+
+            color: #ffffff;
+
+            font-size: 12px;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            transition: 0.3s ease;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.4);
+        }
+
+
+        .toast.show {
+            opacity: 1;
+
+            transform:
+                translate(-50%, 0);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 900px) {
+
+            .container {
+                padding-left: 28px;
+                padding-right: 28px;
+            }
+
+
+            .hero {
+                min-height: 430px;
+            }
+
+
+            .profile-wrapper {
+                width: 160px;
+                height: 160px;
+            }
+
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+
+            .profession {
+                font-size: 17px;
+            }
+
+
+            .intro {
+                font-size: 15px;
+            }
+
+
+            .work-card {
+                min-height: 270px;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+
+            .hero {
+                min-height: auto;
+
+                padding-top: 25px;
+
+                padding-bottom: 12px;
+            }
+
+
+            .profile-wrapper {
+                width: 130px;
+                height: 130px;
+
+                margin-bottom: 8px;
+            }
+
+
+            .profile-ring {
+                border-width: 4px;
+            }
+
+
+            .profile-photo {
+                width: 122px;
+                height: 122px;
+            }
+
+
+            .name {
+                gap: 5px;
+            }
+
+
+            .name-first,
+            .name-last {
+                font-size: 58px;
+
+                letter-spacing: -1px;
+            }
+
+
+            .username {
+                font-size: 14px;
+
+                margin-top: 8px;
+            }
+
+
+            .profession {
+                font-size: 13px;
+
+                letter-spacing: 0.4px;
+
+                margin-top: 18px;
+            }
+
+
+            .profession span {
+                margin: 0 5px;
+            }
+
+
+            .intro {
+                margin-top: 17px;
+
+                font-size: 11px;
+
+                line-height: 1.55;
+            }
+
+
+            .intro strong {
+                font-size: 13px;
+
+                letter-spacing: 3px;
+            }
+
+
+            .section-heading {
+                gap: 10px;
+
+                margin-top: 18px;
+
+                margin-bottom: 16px;
+            }
+
+
+            .section-heading h2 {
+                font-size: 19px;
+
+                letter-spacing: 5px;
+            }
+
+
+            .section-heading::before,
+            .section-heading::after {
+                width: 70px;
+            }
+
+
+            .section-subtitle {
+                font-size: 8px;
+
+                letter-spacing: 4px;
+
+                margin-top: -8px;
+
+                margin-bottom: 16px;
+            }
+
+
+            .work-grid {
+                grid-template-columns: 1fr;
+
+                gap: 13px;
+            }
+
+
+            .work-card {
+                min-height: 230px;
+
+                border-radius: 13px;
+            }
+
+
+            .work-content {
+                padding: 15px 17px 17px;
+            }
+
+
+            .work-label {
+                font-size: 9px;
+
+                padding: 6px 13px;
+
+                margin-bottom: 8px;
+
+                letter-spacing: 1.3px;
+            }
+
+
+            .work-content h3 {
+                font-size: 19px;
+
+                margin-bottom: 4px;
+            }
+
+
+            .work-content p {
+                font-size: 10px;
+
+                line-height: 1.45;
+            }
+
+
+            .work-meta {
+                gap: 5px;
+
+                margin-top: 5px;
+            }
+
+
+            .work-meta span {
+                font-size: 9px;
+            }
+
+
+            .work-meta span:not(:last-child)::after {
+                margin-left: 5px;
+            }
+
+
+            .connect-section {
+                padding-top: 25px;
+            }
+
+
+            .connect-heading {
+                gap: 12px;
+
+                margin-bottom: 14px;
+            }
+
+
+            .connect-heading h2 {
+                font-size: 12px;
+
+                letter-spacing: 5px;
+            }
+
+
+            .connect-heading::before,
+            .connect-heading::after {
+                width: 65px;
+            }
+
+
+            .social-list {
+                gap: 8px;
+            }
+
+
+            .social-item {
+                min-height: 62px;
+
+                border-radius: 12px;
+            }
+
+
+            .social-icon {
+                width: 43px;
+
+                height: 43px;
+
+                margin-left: 8px;
+
+                border-radius: 10px;
+
+                font-size: 21px;
+            }
+
+
+            .social-content {
+                margin-left: 10px;
+            }
+
+
+            .social-content h3 {
+                font-size: 12px;
+            }
+
+
+            .social-content p {
+                font-size: 8px;
+
+                margin-top: 2px;
+            }
+
+
+            .social-arrow {
+                margin-right: 13px;
+
+                font-size: 14px;
+            }
+
+
+            .footer-visual {
+                margin-top: 25px;
+
+                min-height: 150px;
+
+                padding-bottom: 15px;
+            }
+
+
+            .slogan {
+                font-size: 25px;
+            }
+
+
+            .slogan-line {
+                width: 160px;
+            }
+
+
+            .footer-socials {
+                gap: 16px;
+
+                margin-top: 10px;
+            }
+
+
+            .footer-socials a {
+                font-size: 14px;
+            }
+
+
+            .copyright {
+                font-size: 8px;
+
+                padding-bottom: 20px;
+            }
+
+
+            .utility-buttons {
+                display: none;
+            }
+
+        }
+
+
+        /* =====================================================
+           VERY SMALL MOBILE
+        ====================================================== */
+
+        @media (max-width: 380px) {
+
+            .name-first,
+            .name-last {
+                font-size: 51px;
+            }
+
+
+            .profession {
+                font-size: 11px;
+            }
+
+
+            .intro {
+                font-size: 10px;
+            }
+
+
+            .work-card {
+                min-height: 210px;
+            }
+
+
+            .social-item {
+                min-height: 58px;
+            }
+
+
+            .social-icon {
+                width: 39px;
+
+                height: 39px;
+
+                font-size: 18px;
+            }
+
+
+            .social-content h3 {
+                font-size: 11px;
+            }
+
+
+            .social-content p {
+                font-size: 7px;
+            }
+
+        }
+
+
+        /* =====================================================
+           REDUCED MOTION
+        ====================================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+
+                animation-iteration-count: 1 !important;
+
+                transition-duration: 0.01ms !important;
+
+                scroll-behavior: auto !important;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <main class="profile-container">
 
-        <!-- Background Decoration -->
-        <div class="gradient-orb orb-one"></div>
-        <div class="gradient-orb orb-two"></div>
+    <!-- =====================================================
+         PAGE
+    ====================================================== -->
 
-        <section class="profile-card">
+    <main class="page">
 
-            <!-- Profile -->
-            <div class="profile-header">
 
-                <div class="profile-image-wrapper">
-                    <div class="profile-image">
-					    <img
-					        src="https://scontent.fdac146-1.fna.fbcdn.net/v/t1.6435-9/66787853_510361173034541_6988782127059828736_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1245&ctp=s2048x1245&_nc_cat=101&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeETB4sAvN1v06K1hLv2t2ENUMsnfonMg4tQyyd-icyDi8HiEU3wX0fpt2KN61xLs9KvzAgVp9Tc2lIgmErNXCv0&_nc_ohc=kGTXhqbhGTgQ7kNvwGfUpx0&_nc_oc=AdraVyR9B8lGQbPxfoBS-tsCNKtxXg54r-C7Un2X2MHqWv7vwOT35B7ZkAatMX-ZLMI&_nc_zt=23&_nc_ht=scontent.fdac146-1.fna&_nc_gid=reGuNf8ciEf6ZxD20eotvg&_nc_ss=7b2a8&oh=00_AQLiGNuPKmualns0Jtye1u4Ejm03ob_nVEM-ObejvdYa0Q&oe=6AC46353"
-					        alt="Mohammed Rubel"
-					        loading="eager" style=" width: 100px;  height: 100px; -index: 0;  border-radius: 50%;"
-					    >
-					</div>
+        <!-- =================================================
+             BACKGROUND
+        ================================================== -->
 
-                    <span class="online-dot"></span>
+        <div class="page-background"></div>
+
+        <div class="dark-overlay"></div>
+
+
+        <!-- =================================================
+             MAIN CONTAINER
+        ================================================== -->
+
+        <div class="container">
+
+
+            <!-- =============================================
+                 HERO
+            ============================================== -->
+
+            <section class="hero">
+
+
+                <!-- PROFILE IMAGE -->
+
+                <div class="profile-wrapper">
+
+                    <div class="profile-ring"></div>
+
+                    <img
+                        class="profile-photo"
+                        src="https://scontent.fdac146-1.fna.fbcdn.net/v/t1.6435-9/66787853_510361173034541_6988782127059828736_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1245&ctp=s2048x1245&_nc_cat=101&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeETB4sAvN1v06K1hLv2t2ENUMsnfonMg4tQyyd-icyDi8HiEU3wX0fpt2KN61xLs9KvzAgVp9Tc2lIgmErNXCv0&_nc_ohc=kGTXhqbhGTgQ7kNvwGfUpx0&_nc_oc=AdraVyR9B8lGQbPxfoBS-tsCNKtxXg54r-C7Un2X2MHqWv7vwOT35B7ZkAatMX-ZLMI&_nc_zt=23&_nc_ht=scontent.fdac146-1.fna&_nc_gid=reGuNf8ciEf6ZxD20eotvg&_nc_ss=7b2a8&oh=00_AQLiGNuPKmualns0Jtye1u4Ejm03ob_nVEM-ObejvdYa0Q&oe=6AC46353"
+                        alt="Mohammed Rubel"
+                        loading="eager"
+                    >
+
                 </div>
 
-                <h1>Mohammed Rubel</h1>
 
-                <p class="username">@mohammedrubel.me</p>
+                <!-- NAME -->
 
-                <p class="bio">
-                    Photographer • Content Creator • Digital Creator
+                <h1 class="name">
+
+                    <span class="name-first">
+                        Mohammed
+                    </span>
+
+                    <span class="name-last">
+                        Rubel
+                    </span>
+
+                </h1>
+
+
+                <!-- USERNAME -->
+
+                <p class="username">
+                    @mohammedrubel.me
                 </p>
 
-                <p class="intro">
-                    Welcome! Connect with me through my social media platforms.
+
+                <!-- PROFESSION -->
+
+                <p class="profession">
+
+                    Visual Storyteller
+
+                    <span>•</span>
+
+                    Photographer
+
+                    <span>•</span>
+
+                    Content Creator
+
                 </p>
+
+
+                <!-- INTRO -->
+
+                <div class="intro">
+
+                    <strong>
+                        Welcome to my world.
+                    </strong>
+
+                    I create stories through photography, film &amp; travel.<br>
+
+                    Stay connected and explore my work.
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 MY WORK
+            ============================================== -->
+
+            <section class="work-section">
+
+
+                <div class="section-heading">
+
+                    <h2>
+                        MY WORK
+                    </h2>
+
+                </div>
+
+
+                <p class="section-subtitle">
+                    TWO PASSIONS. ONE STORYTELLER.
+                </p>
+
+
+                <div class="work-grid">
+
+
+                    <!-- =====================================
+                         CHILEKOTHA
+                    ====================================== -->
+
+                    <a
+                        href="https://www.youtube.com/@CHILEKOTHA-R"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-card"
+                    >
+
+                        <img
+                            class="work-image"
+                            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=85"
+                            alt="Chilekotha"
+                            loading="lazy"
+                        >
+
+
+                        <div class="work-content">
+
+                            <span class="work-label">
+                                CONTENT &amp; STORIES
+                            </span>
+
+
+                            <h3>
+                                Chilekotha
+                            </h3>
+
+
+                            <div class="work-meta">
+
+                                <span>
+                                    Travel
+                                </span>
+
+                                <span>
+                                    Heritage
+                                </span>
+
+                                <span>
+                                    Documentary
+                                </span>
+
+                                <span>
+                                    Unknown Stories
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- =====================================
+                         BORNOMALA
+                    ====================================== -->
+
+                    <a
+                        href="https://www.facebook.com/bornomalaphotography/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-card"
+                    >
+
+                        <img
+                            class="work-image"
+                            src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85"
+                            alt="Bornomala Photography & Film"
+                            loading="lazy"
+                        >
+
+
+                        <div class="work-content">
+
+                            <span class="work-label">
+                                PHOTOGRAPHY &amp; FILM
+                            </span>
+
+
+                            <h3>
+                                Bornomala Photography &amp; Film
+                            </h3>
+
+
+                            <div class="work-meta">
+
+                                <span>
+                                    Photography
+                                </span>
+
+                                <span>
+                                    Commercial Video
+                                </span>
+
+                                <span>
+                                    Creative Production
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 CONNECT
+            ============================================== -->
+
+            <section class="connect-section">
+
+
+                <div class="connect-heading">
+
+                    <h2>
+                        CONNECT WITH ME
+                    </h2>
+
+                </div>
+
+
+                <div class="social-list">
+
+
+                    <!-- =====================================
+                         FACEBOOK
+                    ====================================== -->
+
+                    <a
+                        href="https://www.facebook.com/mohammedrubel.me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item facebook"
+                    >
+
+                        <img
+                            class="social-bg"
+                            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
+                            alt=""
+                            loading="lazy"
+                        >
+
+
+                        <span class="social-icon">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </span>
+
+
+                        <span class="social-content">
+
+                            <h3>
+                                Facebook
+                            </h3>
+
+                            <p>
+                                Connect with me &amp; follow my journey
+                            </p>
+
+                        </span>
+
+
+                        <span class="social-arrow">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- =====================================
+                         YOUTUBE
+                    ====================================== -->
+
+                    <a
+                        href="https://www.youtube.com/@CHILEKOTHA-R"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item youtube"
+                    >
+
+                        <img
+                            class="social-bg"
+                            src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80"
+                            alt=""
+                            loading="lazy"
+                        >
+
+
+                        <span class="social-icon">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </span>
+
+
+                        <span class="social-content">
+
+                            <h3>
+                                YouTube — Chilekotha
+                            </h3>
+
+                            <p>
+                                Stories beyond the window | জানালার ওপারের গল্প
+                            </p>
+
+                        </span>
+
+
+                        <span class="social-arrow">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- =====================================
+                         BORNOMALA
+                    ====================================== -->
+
+                    <a
+                        href="https://www.facebook.com/bornomalaphotography/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item bornomala"
+                    >
+
+                        <img
+                            class="social-bg"
+                            src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80"
+                            alt=""
+                            loading="lazy"
+                        >
+
+
+                        <span class="social-icon">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                        </span>
+
+
+                        <span class="social-content">
+
+                            <h3>
+                                Bornomala Photography &amp; Film
+                            </h3>
+
+                            <p>
+                                Professional Photography • Commercial Video • Creative Production
+                            </p>
+
+                        </span>
+
+
+                        <span class="social-arrow">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- =====================================
+                         TIKTOK
+                    ====================================== -->
+
+                    <a
+                        href="https://www.tiktok.com/@rubelphoto"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item tiktok"
+                    >
+
+                        <img
+                            class="social-bg"
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+                            alt=""
+                            loading="lazy"
+                        >
+
+
+                        <span class="social-icon">
+
+                            <i class="fa-brands fa-tiktok"></i>
+
+                        </span>
+
+
+                        <span class="social-content">
+
+                            <h3>
+                                TikTok
+                            </h3>
+
+                            <p>
+                                Short stories, moments &amp; creative videos
+                            </p>
+
+                        </span>
+
+
+                        <span class="social-arrow">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             FOOTER VISUAL
+        ================================================== -->
+
+        <section class="footer-visual">
+
+
+            <img
+                class="footer-landscape"
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85"
+                alt=""
+                loading="lazy"
+            >
+
+
+            <div class="slogan">
+
+                Create
+
+                <span>•</span>
+
+                Capture
+
+                <span>•</span>
+
+                Tell Stories
 
             </div>
 
 
-            <!-- Social Links -->
-            <div class="social-links">
+            <div class="slogan-line"></div>
 
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/mohammedrubel.me"
-                   class="social-item facebook"
-                   target="_blank"
-                   rel="noopener noreferrer">
 
-                    <span class="social-icon">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </span>
+            <div class="footer-socials">
 
-                    <span class="social-content">
-                        <strong>Facebook</strong>
-                        <small>Follow me on Facebook</small>
-                    </span>
-
-                    <span class="arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-
+                <a
+                    href="https://www.facebook.com/mohammedrubel.me"
+                    target="_blank"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
                 </a>
 
 
-                <!-- YouTube -->
-                <a href="https://www.youtube.com/@CHILEKOTHA-R"
-                   class="social-item youtube"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    <span class="social-icon">
-                        <i class="fa-brands fa-youtube"></i>
-                    </span>
-
-                    <span class="social-content">
-                        <strong>YouTube</strong>
-                        <small>Watch my videos</small>
-                    </span>
-
-                    <span class="arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-
+                <a
+                    href="https://www.youtube.com/@CHILEKOTHA-R"
+                    target="_blank"
+                    aria-label="YouTube"
+                >
+                    <i class="fa-brands fa-youtube"></i>
                 </a>
 
 
-                <!-- Photography -->
-                <a href="https://www.facebook.com/bornomalaphotography/"
-                   class="social-item photography"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    <span class="social-icon">
-                        <i class="fa-solid fa-camera"></i>
-                    </span>
-
-                    <span class="social-content">
-                        <strong>Bornomala Photography</strong>
-                        <small>Photography & creative work</small>
-                    </span>
-
-                    <span class="arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-
+                <a
+                    href="https://www.facebook.com/bornomalaphotography/"
+                    target="_blank"
+                    aria-label="Instagram / Photography"
+                >
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
 
 
-                <!-- TikTok -->
-                <a href="https://www.tiktok.com/@rubelphoto"
-                   class="social-item tiktok"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    <span class="social-icon">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </span>
-
-                    <span class="social-content">
-                        <strong>TikTok</strong>
-                        <small>Follow my TikTok</small>
-                    </span>
-
-                    <span class="arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-
+                <a
+                    href="https://www.tiktok.com/@rubelphoto"
+                    target="_blank"
+                    aria-label="TikTok"
+                >
+                    <i class="fa-brands fa-tiktok"></i>
                 </a>
 
             </div>
 
 
-           
+            <!-- Optional utility buttons -->
+
+            <div class="utility-buttons">
+
+                <button
+                    type="button"
+                    class="utility-button"
+                    id="shareButton"
+                >
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Share Profile
+                </button>
 
 
-            <!-- Footer -->
-            <footer>
-                <span>Connect • Follow • Share</span>
-            </footer>
+                <button
+                    type="button"
+                    class="utility-button"
+                    id="copyButton"
+                >
+                    <i class="fa-solid fa-link"></i>
+                    Copy Link
+                </button>
+
+            </div>
 
         </section>
+
+
+
+        <!-- =================================================
+             COPYRIGHT
+        ================================================== -->
+
+        <div class="copyright">
+
+            © 2026 Mohammed Rubel • All Rights Reserved
+
+        </div>
+
 
     </main>
 
 
-    <!-- JavaScript -->
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    ></div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script>
-/* =========================================
-   SOCIAL PROFILE JAVASCRIPT
-========================================= */
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const shareButton = document.getElementById("shareButton");
-    const copyButton = document.getElementById("copyButton");
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
 
 
-    /* =====================================
-       SHARE PROFILE
-    ===================================== */
+                /* ============================================
+                   ELEMENTS
+                ============================================ */
 
-    shareButton.addEventListener("click", async function () {
+                const shareButton =
+                    document.getElementById("shareButton");
 
-        const shareData = {
-            title: "Mohammed Rubel",
-            text: "Connect with Mohammed Rubel on social media.",
-            url: window.location.href
-        };
+                const copyButton =
+                    document.getElementById("copyButton");
+
+                const toast =
+                    document.getElementById("toast");
 
 
-        // Native mobile/browser sharing
-        if (navigator.share) {
+                /* ============================================
+                   TOAST
+                ============================================ */
 
-            try {
+                function showToast(message) {
 
-                await navigator.share(shareData);
+                    toast.textContent = message;
 
-            } catch (error) {
+                    toast.classList.add("show");
 
-                // User cancelled sharing
-                console.log("Share cancelled.");
+
+                    setTimeout(
+                        function () {
+
+                            toast.classList.remove("show");
+
+                        },
+                        2200
+                    );
+
+                }
+
+
+                /* ============================================
+                   COPY PROFILE
+                ============================================ */
+
+                async function copyProfileLink() {
+
+                    const url =
+                        window.location.href;
+
+
+                    try {
+
+                        await navigator.clipboard.writeText(url);
+
+                        showToast(
+                            "Profile link copied!"
+                        );
+
+                    }
+
+                    catch (error) {
+
+                        const textarea =
+                            document.createElement("textarea");
+
+                        textarea.value = url;
+
+                        textarea.style.position =
+                            "fixed";
+
+                        textarea.style.opacity =
+                            "0";
+
+                        document.body.appendChild(
+                            textarea
+                        );
+
+                        textarea.select();
+
+                        document.execCommand(
+                            "copy"
+                        );
+
+                        textarea.remove();
+
+
+                        showToast(
+                            "Profile link copied!"
+                        );
+
+                    }
+
+                }
+
+
+                /* ============================================
+                   SHARE
+                ============================================ */
+
+                if (shareButton) {
+
+                    shareButton.addEventListener(
+                        "click",
+                        async function () {
+
+
+                            const shareData = {
+
+                                title:
+                                    "Mohammed Rubel",
+
+                                text:
+                                    "Connect with Mohammed Rubel — Visual Storyteller, Photographer & Content Creator.",
+
+                                url:
+                                    window.location.href
+
+                            };
+
+
+                            if (
+                                navigator.share
+                            ) {
+
+                                try {
+
+                                    await navigator.share(
+                                        shareData
+                                    );
+
+                                }
+
+                                catch (error) {
+
+                                    console.log(
+                                        "Share cancelled."
+                                    );
+
+                                }
+
+                            }
+
+                            else {
+
+                                copyProfileLink();
+
+                            }
+
+                        }
+                    );
+
+                }
+
+
+                /* ============================================
+                   COPY BUTTON
+                ============================================ */
+
+                if (copyButton) {
+
+                    copyButton.addEventListener(
+                        "click",
+                        copyProfileLink
+                    );
+
+                }
+
+
+                /* ============================================
+                   SOCIAL CLICK ANALYTICS
+                ============================================ */
+
+                const socialLinks =
+                    document.querySelectorAll(
+                        ".social-item"
+                    );
+
+
+                socialLinks.forEach(
+                    function (link) {
+
+                        link.addEventListener(
+                            "click",
+                            function () {
+
+                                const title =
+                                    link.querySelector(
+                                        "h3"
+                                    );
+
+                                if (title) {
+
+                                    console.log(
+                                        "Social link clicked:",
+                                        title.textContent.trim()
+                                    );
+
+                                }
+
+                            }
+                        );
+
+                    }
+                );
+
+
+                /* ============================================
+                   IMAGE ERROR FALLBACK
+                ============================================ */
+
+                const images =
+                    document.querySelectorAll(
+                        "img"
+                    );
+
+
+                images.forEach(
+                    function (image) {
+
+                        image.addEventListener(
+                            "error",
+                            function () {
+
+                                image.style.background =
+                                    "#0b1d25";
+
+                            }
+                        );
+
+                    }
+                );
+
 
             }
+        );
 
-        } else {
-
-            // Fallback
-            copyProfileLink();
-
-        }
-
-    });
-
-
-    /* =====================================
-       COPY PROFILE LINK
-    ===================================== */
-
-    copyButton.addEventListener("click", function () {
-
-        copyProfileLink();
-
-    });
-
-
-    async function copyProfileLink() {
-
-        const url = window.location.href;
-
-        try {
-
-            await navigator.clipboard.writeText(url);
-
-            showToast("Profile link copied!");
-
-        } catch (error) {
-
-            // Older browser fallback
-            const textarea = document.createElement("textarea");
-
-            textarea.value = url;
-
-            document.body.appendChild(textarea);
-
-            textarea.select();
-
-            document.execCommand("copy");
-
-            textarea.remove();
-
-            showToast("Profile link copied!");
-
-        }
-
-    }
-
-
-    /* =====================================
-       TOAST MESSAGE
-    ===================================== */
-
-    function showToast(message) {
-
-        let toast = document.querySelector(".toast");
-
-        if (!toast) {
-
-            toast = document.createElement("div");
-
-            toast.className = "toast";
-
-            document.body.appendChild(toast);
-
-        }
-
-        toast.textContent = message;
-
-        toast.classList.add("show");
-
-
-        setTimeout(function () {
-
-            toast.classList.remove("show");
-
-        }, 2200);
-
-    }
-
-
-    /* =====================================
-       LINK CLICK ANALYTICS PLACEHOLDER
-    ===================================== */
-
-    const socialLinks = document.querySelectorAll(".social-item");
-
-    socialLinks.forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            console.log(
-                "Social link clicked:",
-                link.querySelector("strong")?.textContent
-            );
-
-        });
-
-    });
-
-});</script>
+    </script>
 
 </body>
 </html>
